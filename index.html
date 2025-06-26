@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Resume</title>
+</head>
+
+<body>
+    <main>
+        <!-- 個人簡介 -->
+        <article>
+            <!-- 導覽列 -->
+            <nav style="display:flex;">
+                <div class="flag" id="aboutMe">
+                    <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                    <div class="flagText">About me</div>
+                </div>
+                <ul class="flagBar">
+                    <li data-anijs="if: click, do: fadeInDown animated, to:#aboutMe"><a href="#aboutMe">About me</a></li>
+                    <li data-anijs="if: click, do: fadeInDown animated delay-sm, to:#growUp"><a href="#growUp">成長歷程</a></li>
+                    <li data-anijs="if: click, do: fadeInDown animated delay-sm, to:#skills"><a href="#skills">我的技能</a></li>
+                </ul>
+            </nav>
+
+            <!-- 個人資料顯示區 -->
+            <div class="myDataContainer">
+                <div class="myPhoto">
+                    <img src="img/profile-photo.jpg" data-anijs="if: mouseover, do: swing animated">
+                </div>
+                <div class="myData">
+                    <div>
+                        <div style="font-size: 40px; font-weight: 600;">傅子杰</div>
+                        <div style="font-size: 24px; font-weight: 500; line-height: 50px;">
+                            中原大學-資管系
+                            <br>
+                            台北X馬來西亞
+                            2002/09/15
+                        </div>
+                        <div class="contactIcon">
+                            <a href="https://github.com/JarrenPoh" target="_blank"><img src="img/icon/github.png" alt=""></a>
+                            <a href="https://www.instagram.com/jarrenpohhh/profilecard/?igsh=MWZvcGl0Y2Q0cTU0Ng==" target="_blank"><img src="img/icon/ig.png" alt=""></a>
+                            <a href="mailto:jarren@wwwx.red"><img src="img/icon/gmail.png" alt=""></a>
+                            <a href="https://line.me/ti/p/URZ5iXXKyR"><img src="img/icon/line.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 自我介紹區 -->
+            <section>
+                <!-- 輸入個人自我介紹 -->
+                <div class="introduce">
+                    我擔任過新創團隊的創始人及管理者，並且是團隊主要的技術開發者。在過去數個專案當中，累積了相當的
+                    Flutter APP 全端開發經驗，學習到如何從Figma 設計、程式開發到GooglePlay 及AppStore 的部署，確保作品
+                    的品質。                </div>
+                <!-- 輸入座右銘or自我特質 -->
+                <div class="hashtag">
+                    “既然夢 想不受限， 為何不把夢 做大一點。 ”
+                </div>
+            </section>
+       </article>
+
+       <!-- 成長歷程 -->
+       <article>
+            <div class="flag" id="growUp">
+                <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                <div class="flagText">成長歷程</div>
+            </div>
+            
+            <!-- 學歷區 -->
+            <section>
+                <div class="experience">
+                    <div class="circle">創業<br>作品</div>
+                    <div class="timeline">
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>Foodone</h2>
+                            <div class="timeContent">
+                                <div class="date">2021/09 - Present</div>
+                                <div>- 中原大學創新發展盃前五名</div>
+                                <div>- 教育部大專創業實戰模擬競賽前40名</div>
+                                <div>- 長庚大學青年老闆築夢計畫前10名</div>
+                            </div>
+                        </div>
+                        <img src="img/Foodone.png" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>UPoint</h2>
+                            <div class="timeContent">
+                                <div class="date">2018/09 - 2021/06</div>
+                                <div>- 合作對象包括6大中原處室及逾十個學生團體單位。</div>
+                                <div>- 受獲桃園青年局局長侯佳齡贈獎並刊登經濟日報。</div>
+                            </div>
+                        </div>
+                        <img src="img/UPoint.png" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>GTO Monster</h2>
+                            <div class="timeContent">
+                                <div class="date">2015/09 - 2018/06</div>
+                                <div>- YouTube 超過4,000次觀看。 </div>
+                                <div>- 國外網站Two Plus Two 超過5,000次觀看。</div>
+                            </div>
+                        </div>                        
+                        <img src="img/GTOm.png" class="hidden">
+                    </div>
+                </div>
+
+                <!-- 分隔線 -->
+                <div style="text-align: center;">
+                    <hr style="border-color:#a8b8b7;" noshade>
+                </div>
+
+                 <!-- 工作經歷區 -->
+                <div class="experience">
+                    <div class="circle">額外<br>經驗</div>
+                    <div class="timeline">
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>2024 台北城市儀表板春季大黑客松佳作</h2>
+                            <div class="timeContent">
+                                <div class="date">2024/01月 <a href="https://github.com/JarrenPoh/Taipei-City-Dashboard" target="_blank">參考連結</a></div>
+                                <div>This project is a part of the 2024 Taipei Urban Spring Dashboard Hackathon, a government competition aimed at co-developing a dashboard with the government to promote joint concern between the government and citizens about Taipei City. Our theme for this competition is the Traffic Dashboard. Our team, "真的是Go了！" received an Honorable Mention.</div>
+                            </div>
+                        </div>
+                        <img src="img/台北城市儀表板.png" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>2024 智慧城市大數據應用競賽第三名</h2>
+                            <div class="timeContent">
+                                <div class="date">2024/03月 <a href="https://github.com/JarrenPoh/Taoyuan" target="_blank">參考連結</a></div>
+                                <div>This is the first Smart City Big Data Application Competition jointly organized by the Taoyuan and Taipei Information Bureaus in 2024. The team "老天爺也流淚" secured third place with their flood prediction system.</div>
+                            </div>
+                        </div>
+                        <img src="img/桃園儀表板.png" class="hidden">
+
+                        <div class="timeitem">
+                            <div class="timedot"></div>
+                            <h2>受獲桃園青年局局長侯佳齡贈獎並刊登經濟日報</h2>
+                            <div class="timeContent">
+                                <div class="date">2024/06月 <a href="https://money.udn.com/money/amp/story/5635/8001388" target="_blank">參考連結</a></div>
+                            </div>
+                        </div>                        
+                        <img src="img/經濟日報.jpg" class="hidden">
+                    </div>
+                    <div style="height: 320px; display: flex; align-items: center;">
+                    </div>
+                </div>                
+            </section>
+
+        </article>
+
+        <!-- 技能區 -->
+        <article>
+            <div class="flag" id="skills">
+                <img src="img/icon/flag.png" data-anijs="if: mouseover, do: fadeInDown animated">
+                <div class="flagText">我的技能</div>
+            </div>
+           
+            <section>
+                <div class="skillContainer">
+                    <!-- 專業技能區 -->
+                    <div class="skillCol">
+                        <div class="skillTitle">
+                            專業技能
+                        </div>
+
+                        <div class="skill">
+                            <div class="skillText">
+                                前端APP開發
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(70,0)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    90%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skillText">
+                                前端網頁開發
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(85,1)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skillText">
+                                後端程式開發
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(75,2)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    90%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skillText">
+                                伺服器管理
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(80,3)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 程式技能區 -->
+                    <div class="skillCol">
+                        <div class="skillTitle">
+                            程式技能
+                        </div>
+
+                        <div class="skill">
+                            <div class="skillText">
+                                Flutter, Dart 
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(85,4)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                            <div class="skillText">
+                                Python
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(75,5)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    80%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skillText">
+                                Node.Js
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(80,6)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    60%
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill">
+                            <div class="skillText">
+                                C
+                            </div>
+                            <div class="skillContent">
+                                <div class="progress">
+                                    <progress onclick="move(40,7)" class="degree" id="degree" max="100" value="1"></progress>
+                                </div>
+                                <div class="precent">
+                                    40%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <a href="#">
+            <div class="top">
+                Top
+            </div>
+        </a>
+    </main>
+    <footer>
+        <div style="margin: 32px; text-align: center;">
+            <hr style="border-color:#ffffff" noshade>
+            <div style="margin-top: 32px;">
+                Copyright @2024 JarrenPoh
+                <br>
+            </div>
+        </div>
+    </footer>
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+    <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+    <script>
+        $(function(){
+        
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            
+            if( scroll >= 70){
+            $(".top").fadeIn();
+            
+            }else{
+            
+            $(".top").fadeOut();
+            
+            }
+        });
+        $('.top').click(function(){
+            $('html,body').animate({
+            scrollTop:$('html').offset().top
+            })
+            
+            return false;
+        });
+
+        })
+    </script>
+    <script>
+        window.onload= function text(){
+        move(70,0);
+        move(80,1);
+        move(75,2);
+        move(97,3);
+        move(85,4);
+        move(75,5);
+        move(80,6);
+        move(40,7);
+        }
+        function move(num,index){
+            var value = 1;
+            var id =setInterval(frame, 20)
+            function frame() {
+                var ans = document.getElementsByClassName("degree")[index];
+                if(value >=num){
+                    clearInterval(id);
+                }
+                else{
+                    value++;
+                    ans.value=value;
+                }
+            }
+        }
+        
+    </script>
+      
+</body>
+
+</html>
